@@ -15,3 +15,7 @@ Please start a new branch (such as brady-patches)
 Two words on one line represents a single search term.
 Indents usually indicate negations or stemming variations of the term.
 For now, rather than put in wildcards, just add the term.
+
+
+html2text (pip install html2text) is a python command line tool that takes html (ie NIH RFA and PAR) and converts to Markdown. 
+From there, it should be relatively straightforward to take these keywords and highlight in the document.
