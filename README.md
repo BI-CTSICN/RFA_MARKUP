@@ -19,3 +19,6 @@ For now, rather than put in wildcards, just add the term.
 
 html2text (pip install html2text) is a python command line tool that takes html (ie NIH RFA and PAR) and converts to Markdown. 
 From there, it should be relatively straightforward to take these keywords and highlight in the document.
+
+This looks like a useful way to replace lots of text in big files:
+https://medium.freecodecamp.org/regex-was-taking-5-days-flashtext-does-it-in-15-minutes-55f04411025f
