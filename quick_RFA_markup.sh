@@ -1,6 +1,10 @@
 #!/bin/sh
 #usage sh quick_RFA_markup.sh <in_file> <out_file>
-
+#add any other terms as a new line
+#sed 's/term/**term**/g' | \
+# will highlight term 
+# the | pipes output to the next command and \ continues the command to the next line
+# the output of one sed conversion becomes the input of the next conversion.
 sed 's/must/**must**/g' $1   | \
 sed 's/responsive/**responsive**/g' | \
 sed 's/do not/**do not**/g' | \
