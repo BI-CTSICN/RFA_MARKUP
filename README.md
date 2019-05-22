@@ -19,6 +19,25 @@ For now, rather than put in wildcards, just add the term.
 
 html2text (pip install html2text) is a python command line tool that takes html (ie NIH RFA and PAR) and converts to Markdown. 
 From there, it should be relatively straightforward to take these keywords and highlight in the document.
+A little cleanup may be needed, but seems generally pretty good.
+
+I have been using the Markdown previewer in the Atom text editor to view Markdown files. 
+It seems to want files given the suffix .md 
+
+I installed the Markdown to PDF  converter in Atom
+
+
+Step 1
+html2txt file.html > file.md
+Step 2
+sh quick_RFA_markup.sh file.md  file2.md
+Step 3
+Open file2.md in Atom 
+Step 4 
+Convert to PDF
+
 
 This looks like a useful way to replace lots of text in big files:
 https://medium.freecodecamp.org/regex-was-taking-5-days-flashtext-does-it-in-15-minutes-55f04411025f
+
+
