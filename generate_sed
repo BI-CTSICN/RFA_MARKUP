@@ -1,0 +1,13 @@
+Given a list of keywords in one column in file wordlist <br>
+Convert to a sed script<br>
+
+word1<br>
+word2<br>
+word3<br>
+word4<br>
+word5<br>
+word6<br>
+word7<br>
+
+$while read keyword; do echo sed s/"$keyword"/**"$keyword"**/g; done <wordlist>sedscript
+
