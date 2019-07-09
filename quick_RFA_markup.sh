@@ -5,6 +5,16 @@
 # will highlight term 
 # the | pipes output to the next command and \ continues the command to the next line
 # the output of one sed conversion becomes the input of the next conversion.
+#Notes: 7/11/19
+#Seriously consider replacing with something like
+##!/bin/bash
+#input="/path/to/terms.txt"
+#while IFS= read -r line
+#do
+#  sed -i "s/"$var1"/**"$var1"**/g" RFA_file
+# done < "$input"
+
+
 sed 's/must/**must**/g' $1   | \
 sed 's/responsive/**responsive**/g' | \
 sed 's/do not/**do not**/g' | \
