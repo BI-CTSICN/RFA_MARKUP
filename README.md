@@ -10,7 +10,7 @@ Click on the Word_list_keywords.txt document to see the list
 
 If there are words that you think should be added, click the pencil to edit
 make the changes. 
-Please start a new branch (such as brady-patches)
+Please start a new branch (such as patches)
 
 Two words on one line represents a single search term.<br>
 Indents usually indicate negations or stemming variations of the term.<br>
