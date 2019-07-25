@@ -22,6 +22,7 @@ From there, it should be relatively straightforward to take these keywords and h
 A little cleanup may be needed, but seems generally pretty good.
 
 I have been using the Markdown previewer in the Atom text editor to view Markdown files.<br> 
+There may be another Atom extension that was installed.
 It seems to want files given the suffix .md 
 
 I installed the Markdown to PDF  converter in Atom
@@ -40,5 +41,20 @@ Convert to PDF<br>
 This looks like a useful way to replace lots of text in big files:
 https://medium.freecodecamp.org/regex-was-taking-5-days-flashtext-does-it-in-15-minutes-55f04411025f
 
+Surajit R solution
+con <- file(paste("File.txt", sep = ""), "r")
+r10 <- readLines(con, n = -1)
+close(con)
 
+dat4 <- textConnection(r10)
+r1 <- read.table(dat4, sep = " ", header = TRUE)
+close(dat4)
+keywords<- c("some", "Hello World", "OK")
+d <- c()
+for(i in seq_along(keywords)){
+   pas <- paste0("**",keywords[i],"**")
+   dat <- gsub(keywords[i], pas, r10)
+   r10 <- dat
+}
+write(dat, file = "File_markedUp.md")
 
