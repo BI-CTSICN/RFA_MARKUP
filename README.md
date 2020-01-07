@@ -22,19 +22,21 @@ From there, it should be relatively straightforward to take these keywords and h
 A little cleanup may be needed, but seems generally pretty good.
 
 I have been using the Markdown previewer in the Atom text editor to view Markdown files.<br> 
-There may be another Atom extension that was installed.
-It seems to want files given the suffix .md 
+A Markdown to PDF converter may also have been installed in the process.
+Files should be given the suffix .md 
 
-I installed the Markdown to PDF  converter in Atom
+I also installed a Markdown to PDF converter in Atom; there are several available
+http://data.agaric.com/creating-nicely-formatted-pdfs-from-markdown-files-atom-editor
 
-
-Step 1<br>
+Step 0<br>
+get the HTML for the page of interest<br>
+Step 1 Convert HTML to Markdown. Check the rendered Markdown output in Atom<br>
 html2txt file.html > file.md<br>
-Step 2<br>
+Step 2 Use the shell script to add Markdown tags<br>
 sh quick_RFA_markup.sh file.md  file2.md<br>
-Step 3<br>
+Step 3 View the output <br>
 Open file2.md in Atom <br>
-Step 4 <br>
+Step 4 PDF conversion <br>
 Convert to PDF<br>
 
 
